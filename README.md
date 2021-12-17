@@ -27,7 +27,7 @@
 <hr />
 
 <h2>Preview 🎨</h2>
-<p>The preview is available in: <a href="#">Pomodoro.</a></p>
+<p>The preview is available in: <a href="https://pomodoro-ashy.vercel.app/">Pomodoro.</a></p>
 
 <hr />
 
