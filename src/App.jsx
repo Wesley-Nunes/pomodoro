@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Title } from './components';
+import Title from './components';
 
 import CssReset from './CssReset';
 
