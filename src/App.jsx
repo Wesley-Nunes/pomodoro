@@ -1,12 +1,14 @@
 import React from 'react';
 
+import { Title } from './components';
+
 import CssReset from './CssReset';
 
 function App() {
   return (
     <>
       <CssReset />
-      <h1>Pomodoro</h1>
+      <Title />
     </>
   );
 }
