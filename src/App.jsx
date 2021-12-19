@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Title, Settings } from './components';
+import { Title, Settings, Button } from './components';
 
 import CssReset from './CssReset';
 
@@ -21,9 +21,12 @@ function App() {
     <>
       <CssReset />
       <Title />
-      <Settings name="Work Time" value={`${workTime.minute}:${workTime.second}`} />
-      <Settings name="Break Time" value={`${breakTime.minute}:${breakTime.second}`} />
-      <Settings name="Sessions" value={`${sessions}`} />
+      <div>
+        <Settings name="Work Time" value={`${workTime.minute}:${workTime.second}`} />
+        <Settings name="Break Time" value={`${breakTime.minute}:${breakTime.second}`} />
+        <Settings name="Sessions" value={`${sessions}`} />
+      </div>
+      <Button>Start</Button>
     </>
   );
 }
