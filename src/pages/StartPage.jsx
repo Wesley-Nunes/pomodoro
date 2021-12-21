@@ -1,8 +1,9 @@
 import React from 'react';
 
 import {
-  Title, Settings, Button, PageWrapper,
+  Title, Settings, PageWrapper, Button,
 } from '../components';
+import { Link } from '../services';
 
 function StartPage() {
   return (
@@ -13,7 +14,9 @@ function StartPage() {
         <Settings name="Break Time" value="5:00" />
         <Settings name="Sessions" value="4" />
       </div>
-      <Button bgColor="primary">Start</Button>
+      <Link to="work-time">
+        <Button bgColor="primary">Start</Button>
+      </Link>
     </PageWrapper>
   );
 }

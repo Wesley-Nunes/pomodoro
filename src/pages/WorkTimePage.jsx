@@ -3,6 +3,7 @@ import React from 'react';
 import {
   PageWrapper, Title, Subtitle, ProgressRing, Button,
 } from '../components';
+import { Link } from '../services';
 
 function WorkTimePage() {
   return (
@@ -11,7 +12,9 @@ function WorkTimePage() {
       <Subtitle bgColor="primary" subtitle="Stay Focus" session="1/4" />
       <ProgressRing minute="25" second="00" circleColor="primary" />
       <span>
-        <Button bgColor="nullColor">Restart</Button>
+        <Link to="/">
+          <Button bgColor="nullColor">Restart</Button>
+        </Link>
         <Button bgColor="primary">Pause</Button>
       </span>
     </PageWrapper>
