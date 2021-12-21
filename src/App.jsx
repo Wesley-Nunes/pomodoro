@@ -1,15 +1,15 @@
 import React from 'react';
 
-import BreakTimePage from './pages/BreakTimePage';
+import { BrowserRouter, Router } from './services';
 
 import CssReset from './CssReset';
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <CssReset />
-      <BreakTimePage />
-    </>
+      <Router />
+    </BrowserRouter>
   );
 }
 
