@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { Route, Routes } from 'react-router-dom';
+import {
+  BrowserRouter, Link, Route, Routes,
+} from 'react-router-dom';
 
 import StartPage from '../../pages/StartPage';
 import WorkTimePage from '../../pages/WorkTimePage';
@@ -16,4 +18,4 @@ function Router() {
   );
 }
 
-export default Router;
+export { BrowserRouter, Link, Router };

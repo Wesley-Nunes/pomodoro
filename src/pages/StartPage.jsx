@@ -3,7 +3,6 @@ import React from 'react';
 import {
   Title, Settings, PageWrapper, Button,
 } from '../components';
-import { Link } from '../services';
 
 function StartPage() {
   return (
@@ -14,9 +13,7 @@ function StartPage() {
         <Settings name="Break Time" value="5:00" />
         <Settings name="Sessions" value="4" />
       </div>
-      <Link to="work-time">
-        <Button bgColor="primary">Start</Button>
-      </Link>
+      <Button bgColor="primary" targetPage="/work-time">Start</Button>
     </PageWrapper>
   );
 }

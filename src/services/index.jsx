@@ -1,2 +1,1 @@
-export { BrowserRouter, Link } from 'react-router-dom';
-export { default as Router } from './router/Router';
+export { BrowserRouter, Link, Router } from './router/Router';
