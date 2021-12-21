@@ -1,6 +1,6 @@
 import React from 'react';
 
-import WorkTimePage from './pages/WorkTimePage';
+import BreakTimePage from './pages/BreakTimePage';
 
 import CssReset from './CssReset';
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <CssReset />
-      <WorkTimePage />
+      <BreakTimePage />
     </>
   );
 }
