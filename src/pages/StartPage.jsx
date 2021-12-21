@@ -13,7 +13,7 @@ function StartPage() {
         <Settings name="Break Time" value="5:00" />
         <Settings name="Sessions" value="4" />
       </div>
-      <Button>Start</Button>
+      <Button bgColor="primary">Start</Button>
     </PageWrapper>
   );
 }
