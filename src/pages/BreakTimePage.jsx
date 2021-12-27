@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {
-  PageWrapper, Title, Subtitle, ProgressRing, Button, MyLink,
+  PageWrapper, Title, Subtitle, ProgressRing,
 } from '../components';
 
 function BreakTimePage() {
@@ -10,12 +10,6 @@ function BreakTimePage() {
       <Title />
       <Subtitle bgColor="secondary" subtitle="Take a break" session="1/4" />
       <ProgressRing minute="05" second="00" circleColor="secondary" />
-      <span>
-        <MyLink targetPage="/">
-          <Button bgColor="nullColor">Restart</Button>
-        </MyLink>
-        <Button bgColor="secondary">Pause</Button>
-      </span>
     </PageWrapper>
   );
 }

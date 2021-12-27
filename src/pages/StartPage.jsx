@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {
-  Title, Settings, PageWrapper, Button, MyLink,
+  Title, Settings, PageWrapper,
 } from '../components';
 import { useTimer } from '../services/state/stateTimer';
 
@@ -17,9 +17,6 @@ function StartPage() {
         <Settings name="Break Time" value={`${breakTime.minutes}:${breakTime.seconds}`} />
         <Settings name="Sessions" value={`${sessions}`} />
       </div>
-      <MyLink targetPage="/work-time">
-        <Button bgColor="primary">Start</Button>
-      </MyLink>
     </PageWrapper>
   );
 }
