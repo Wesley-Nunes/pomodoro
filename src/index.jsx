@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { TimerProvider } from './services';
+import { TimerProvider } from './services/state/stateTimer';
 
 import App from './App';
 

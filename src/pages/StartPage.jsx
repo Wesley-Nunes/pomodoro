@@ -3,7 +3,7 @@ import React from 'react';
 import {
   Title, Settings, PageWrapper, Button, MyLink,
 } from '../components';
-import { useTimer } from '../services';
+import { useTimer } from '../services/state/stateTimer';
 
 function StartPage() {
   const { getValues } = useTimer();

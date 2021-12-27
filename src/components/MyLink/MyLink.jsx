@@ -2,7 +2,7 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-import { Link } from '../../services';
+import { Link } from '../../services/router/Router';
 
 function MyLink({ children, targetPage }) {
   return (

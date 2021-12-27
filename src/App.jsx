@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BrowserRouter, Router } from './services';
+import { BrowserRouter, Router } from './services/router/Router';
 
 import CssReset from './CssReset';
 
