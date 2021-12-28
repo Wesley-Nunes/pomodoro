@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {
-  BrowserRouter, Link, Route, Routes,
+  BrowserRouter, Route, Routes,
 } from 'react-router-dom';
 
 import StartPage from '../../pages/StartPage';
@@ -18,4 +18,4 @@ function Router() {
   );
 }
 
-export { BrowserRouter, Link, Router };
+export { BrowserRouter, Router };

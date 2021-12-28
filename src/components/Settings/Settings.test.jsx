@@ -6,7 +6,7 @@ import Settings from './Settings';
 
 describe('Settings Component', () => {
   beforeEach(() => {
-    render(<Settings name="Sessions" value="4"/>)
+    render(<Settings name="Sessions" value="4" setFn={() => null}/>)
   });
 
   it('renders a section with the word Settings', () => {

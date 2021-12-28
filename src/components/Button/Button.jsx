@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 import StyledButton from './ButtonStyle';
 
-function Button({ children, bgColor }) {
+function Button({ children, bgColor, handleClick }) {
   return (
-    <StyledButton type="button" bgColor={bgColor}>
+    <StyledButton type="button" bgColor={bgColor} onClick={handleClick}>
       {children}
     </StyledButton>
   );
@@ -15,6 +15,7 @@ function Button({ children, bgColor }) {
 Button.propTypes = {
   children: PropTypes.string.isRequired,
   bgColor: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default Button;
