@@ -26,11 +26,11 @@ function timeAction(number, signal) {
 }
 
 const action = {
-  'Work Time': function (number, signal) {
+  'Work Time': (number, signal) => {
     const [minutes, seconds] = timeAction(number, signal);
     return { workTime: { minutes, seconds } };
   },
-  'Break Time': function (number, signal) {
+  'Break Time': (number, signal) => {
     const [minutes, seconds] = timeAction(number, signal);
     return { breakTime: { minutes, seconds } };
   },
