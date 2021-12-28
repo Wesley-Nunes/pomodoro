@@ -8,15 +8,15 @@ import Timer from '../timer/Timer';
 
 const TimerContext = createContext({});
 
-const timerValues = {
-  sessions: 4,
-  workTime: { minutes: 25, seconds: 0 },
-  breakTime: { minutes: 5, seconds: 0 },
+let timer = {
+  values: {
+    sessions: 4,
+    workTime: { minutes: 25, seconds: 0 },
+    breakTime: { minutes: 5, seconds: 0 },
+  },
 };
-const timer = new Timer(timerValues);
-
 function TimerProvider({ children }) {
-  const [values, setValues] = useState(timerValues);
+  const [values, setValues] = useState(timer.values);
 
   useEffect(() => {
     window.setInterval(() => {
@@ -34,10 +34,31 @@ function TimerProvider({ children }) {
     }, 1000);
   }, []);
 
+  const createTimer = () => {
+    timer = new Timer(timer.values);
+  };
+
+  const setTimerValues = ({
+    sessions = values.sessions, workTime = values.workTime, breakTime = values.breakTime,
+  }) => {
+    timer.values = { sessions, workTime, breakTime };
+  };
+
   const getValues = () => values;
 
+  const start = () => timer.start();
+
+  const stop = () => timer.stop();
+
+  const reset = () => timer.reset();
+
   const publicActions = {
+    createTimer,
+    setTimerValues,
     getValues,
+    start,
+    stop,
+    reset,
   };
 
   return (
